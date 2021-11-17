@@ -11,4 +11,9 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--pale-blue);
+  font-size: 16px;
+}
+
+a {
+  font-weight: 700;
 }

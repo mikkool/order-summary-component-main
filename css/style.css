@@ -9,8 +9,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  
+  height: 100vh; 
 }
 
 .box-grid {
@@ -36,10 +35,12 @@ main {
 .order-details p {
   color: var(--desaturated-blue);
   padding: 0rem 2rem;
+  line-height: 25px;
+  font-size: 16px;
 }
 
 .plan-flex {
-  margin: 1rem 2rem 3rem 2rem;
+  margin: 1rem 2rem 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,18 +53,34 @@ main {
   padding-right: 4rem;
 }
 
+.plan-info .plan {
+  font-weight: 700;
+}
+
 .plan img {
   padding-right: 1rem;
+}
+
+.plan-link a:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.value {
+  margin-top: .5rem;
+  color: var(--desaturated-blue);
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  padding: 2.3rem;
+  padding: 0rem 2.3rem 2.3rem 2.3rem;
+  justify-content: space-between;
 }
 
 .buttons button {
   border: 0;
+  font-size: 14px;
 }
 
 .btn-proceed {
@@ -73,12 +90,32 @@ main {
   color: #fff;
   font-weight: 700;
   border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px var(--desaturated-blue);
+  cursor: pointer;
 }
 
 .btn-proceed:hover {
-  background-color: var(--dark-blue);
+  background-color: #766cf1;
 }
 
 .btn-cancel {
   background-color: #fff;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  .box {
+    padding: 0rem 30px;
+  }
+
+  .box-grid {
+    width: 100%;
+  }
+  
+  .box-grid img {
+    width: 100%;
+  }
 }
