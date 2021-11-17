@@ -1,0 +1,84 @@
+@import url("../css/variables.css");
+@import url("../css/global.css");
+
+main {
+  position: relative;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.box-grid {
+  width: 450px;
+  box-shadow: 0 0 50px var(--pale-blue);
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.box-grid img{
+  border-radius: 1rem 1rem 0 0;
+}
+
+.order-details {
+  margin: 1rem 2rem 0rem 2rem;
+}
+
+.order-details h1 {
+  padding: 1.5rem 0rem 1rem 0;
+  color: var(--dark-blue);
+}
+
+.order-details p {
+  color: var(--desaturated-blue);
+  padding: 0rem 2rem;
+}
+
+.plan-flex {
+  margin: 1rem 2rem 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  padding: 1.3rem 0;
+  border-radius: 1rem;
+}
+
+.plan-info {
+  padding-right: 4rem;
+}
+
+.plan img {
+  padding-right: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem;
+}
+
+.buttons button {
+  border: 0;
+}
+
+.btn-proceed {
+  border: 0;
+  background-color: var(--bright-blue);
+  padding: 1rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+
+.btn-proceed:hover {
+  background-color: var(--dark-blue);
+}
+
+.btn-cancel {
+  background-color: #fff;
+}
